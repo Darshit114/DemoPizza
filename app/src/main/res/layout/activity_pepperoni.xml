@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pepperoni">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.Light.ScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="15dp"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <ImageView
+                    android:id="@+id/itemImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginStart="16dp"
+                android:text="TextView"
+                android:textAllCaps="false"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:typeface="monospace"
+                android:visibility="visible"
+                app:fontFamily="sans-serif"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+            <EditText
+                android:id="@+id/qnt"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="#33ffffff"
+                android:ems="10"
+                android:hint="@string/qunt"
+                android:inputType="text"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/price" />
+
+            <EditText
+                android:id="@+id/contact"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#33ffffff"
+                android:ems="10"
+                android:hint="Enter Your Contact Number"
+                android:inputType="text"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/qnt" />
+
+            <EditText
+                android:id="@+id/addr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="#33ffffff"
+                android:ems="10"
+                android:hint="Enter Your Address"
+                android:inputType="text"
+                android:textColor="@color/cardview_dark_background"
+                android:textColorHint="@android:color/black"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/contact" />
+
+
+            <Button
+                android:id="@+id/order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:background="@drawable/button_xml"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="@string/order"
+                android:textColor="#fff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/addr" />
+
+            <Button
+                android:id="@+id/cart"
+                android:background="@drawable/button_xml"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:layout_margin="15dp"
+                android:text="@string/cart"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/order" />
+
+
+        </android.support.constraint.ConstraintLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>

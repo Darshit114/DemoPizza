@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="5dp"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_marginBottom="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="LOGIN"
+        android:layout_gravity="top"
+        android:textColor="@color/colorAccent"
+        android:gravity="center"
+        android:textSize="35sp"/>
+
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_email_address"
+        android:inputType="textPersonName" />
+</android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:background="@drawable/button_xml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_margin="15dp"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/txtRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Not A Member Yet ? Get Register"
+        android:textSize="18sp"/>
+
+</LinearLayout>
+
+
+

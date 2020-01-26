@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:gravity="center"
+        android:text="@string/reister"
+        android:textSize="35sp"
+        android:textColor="@color/colorAccent"
+        android:textStyle="bold"/>
+<android.support.design.widget.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_margin="8dp"
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/edtFname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_first_name"
+        android:inputType="textPersonName" />
+</android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtLname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_last_name"
+            android:inputType="textPersonName" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_margin="8dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_email_as_username"
+            android:inputType="textPersonName"
+            app:layout_constraintHorizontal_bias="0.0" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_margin="8dp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp"
+        android:layout_margin="15dp"
+        android:textColor="#fff"
+        android:background="@drawable/button_xml"
+        android:text="@string/reister"/>
+
+
+</LinearLayout>

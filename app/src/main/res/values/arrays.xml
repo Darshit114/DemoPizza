@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="cityname">
+        <item>xyz</item>
+        <item>xyz</item>
+        <item>xyz</item>
+        <item>xyz</item>
+        <item>xyz</item>
+    </string-array>
+</resources>
