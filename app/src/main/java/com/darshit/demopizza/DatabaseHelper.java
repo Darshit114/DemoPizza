@@ -46,7 +46,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
         else
             return true;
     }
-    public boolean addItem(int USER_ID, String pname, String pqty, String num, String addr) {
+    public boolean addItem(int USER_ID, String pname, int pqty, String num, String addr) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(MyUtil.COL_9, pname);
@@ -68,7 +68,7 @@ public class DatabaseHelper extends SQLiteOpenHelper{
     }
 
 
-    public boolean updateItem(String uname,String pname,String pqty,String num,String addr){
+    public boolean updateItem(String uname,String pname,int pqty,int num,String addr){
 
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();

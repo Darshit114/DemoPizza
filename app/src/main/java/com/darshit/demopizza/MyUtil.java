@@ -18,7 +18,7 @@ public class MyUtil {
     public  static final String CREATE_QUERY_CART = "CREATE TABLE " + TABLE_NAME_CART + "(ID INTEGER PRIMARY KEY AUTOINCREMENT , " +
             "ITEM_NAME VARCHAR, " +
             "USER_ID INTEGER, " +
-            "QTY VARCHAR ," +
+            "QTY INTEGER," +
             "NUM VARCHAR," +
             "ADDR VARCHAR)";
 

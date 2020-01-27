@@ -67,15 +67,15 @@ public class pepperoni extends AppCompatActivity {
 
         cart_btn.setOnClickListener(new View.OnClickListener() {
 
-            String pizza_name;
+            String pizza_name,usr_addr,usr_num;
 
-                String item_qty,usr_num,usr_addr;
+                int item_qty;
                 String uname;
             @Override
             public void onClick(View view) {
 
 
-                item_qty = qunt.getText().toString();
+                item_qty = Integer.parseInt(qunt.getText().toString());
                 usr_num = num.getText().toString();
                 usr_addr = addr.getText().toString();
 
